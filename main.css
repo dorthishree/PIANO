@@ -1,0 +1,990 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url('https://fonts.googleapis.com/css?family=Alegreya:900');
+h1
+{
+    font-family: 'Alegreya', serif;
+    color: black;
+    font-size: 53px;
+    margin-left: 40%;
+    margin-top: 246px;
+}
+h3
+{
+    font-family: 'Alegreya', serif;
+    margin-top: 337px;
+    margin-left: -517px;
+    font-size: 25px;
+    color: black;
+}
+.player-buttons .fa {
+/*    margin-right: 1rem;*/
+    margin-right: 5px;
+}
+
+.fa.disabled {
+    color: gray;
+}
+.modal__background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.modal__background:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.background {
+    font-family: 'Alegreya', serif;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("images/screen.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.button {
+    transition: 0.25s;
+    color: black;
+    text-decoration: none;
+    margin-top: 393px;
+    height: 39px;
+    /* width: 172px; */
+    font-size: 29px;
+    padding: 0;
+    border: 1px solid black;
+    margin-left: -428px;
+    padding: 10px;
+}
+.button:hover {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+/*
+    border-left: none;
+    border-right: none;
+*/
+}
+
+h1{
+  color:black;
+  text-align:center;
+ 
+}
+.login-form
+{
+  width:350px;
+  padding:40px 30px;
+  border-radius:4px;
+}
+
+.form-control{
+    width: 85%;
+    margin-left: 15px;
+    height: 43px;
+    padding: 5px 7px 5px 15px;
+    background: #fff;
+    color: #666;
+    border: 2px solid rgb(237,137,103);
+    border-radius: 4px;
+}
+.log-btn{
+     background: rgb(237,137,103);
+    dispaly: inline-block;
+    width: 31%;
+    font-size: 16px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-left: 113px;
+    margin-top: 13px;
+}
+.signup
+{
+    text-decoration: none;
+    color: rgb(237,137,103);
+    display: block;
+    font-size: 12px;
+    width: 128px;
+    float: left;
+    margin-top: 10px;
+}
+.signup:hover{
+  text-decoration:underline;
+  color:rgb(237,137,103);
+}
+.link{
+  text-decoration:none;
+  color:rgb(237,137,103);
+  display:block;
+  text-align:right;
+  font-size:12px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.link:hover{
+  text-decoration:underline;
+  color:rgb(237,137,103);
+}
+
+
+.modal__content {
+     background: #fff;
+    padding: 1rem;
+    position: relative;
+    z-index: 4;
+    height: 400px !important;
+    width: 400px !important;
+    background-image: url("images/Spinning-Record.gif");
+    
+    border-radius: 50%;
+
+    
+    background-size: cover;
+    border: none;
+
+}
+@media screen and (max-width: 699px) {
+  .modal__content {
+    margin: 2rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .modal__content {
+    margin: 4rem auto;
+    max-width: 400px;
+    min-height: 300px;
+  }
+}
+.modal__content svg,
+.modal__content path {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 25px;
+  width: 25px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  fill: #bfbfbf;
+}
+.modal__content svg:hover,
+.modal__content path:hover {
+  fill: #0c0c0c;
+}
+
+.wel
+{
+    font-size: 52px;
+    float: left;
+    margin: 0rem 0 1rem;
+    text-align: center;
+    -webkit-margin-start: 800px;
+    margin-top: 105px;
+}
+.to 
+{
+        font-size: 52px;
+    text-align: center;
+    margin-top: 173px;
+}
+.mus
+{
+          font-size: 52px;
+    text-align: center;
+    margin-top: 240px;
+    -webkit-margin-start: -290px;
+}
+.world
+{
+       font-size: 52px;
+    text-align: center;
+    margin-top: 304px;
+    -webkit-margin-start: 23px;
+
+}
+ 
+font-size: 52px;
+    float: left;
+    margin: 0rem 0 1rem;
+    text-align: center;
+    -webkit-margin-start: 800px;
+    margin-top: 105px;
+}
+.success {
+  width: 100%;
+}
+
+body{
+    margin: 0px !important;
+}
+.logg
+{
+    color: white;
+    margin-top: -13px;
+    margin-left: 113px;
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+        margin-bottom: 50px;
+}
+.main
+{
+  padding: 0px !important;
+    margin-top: -16px !important;
+    margin-top: -16px !important;
+    background:url("images/pexels-photo-96380.jpeg");
+        height: 662px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        
+}
+.hidden
+{
+    display:none;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a:hover 
+{
+  color: #555;
+}
+.songs
+{
+    overflow: auto;
+       position: fixed;
+    border: 1px solid #dedede;
+    height: 79%;
+    width: 24%;
+    margin-left: 966px;
+    margin-top: -526px;
+    border-radius: 5px;
+}
+.right.floated {
+    float: right;
+        float: right;
+    color: #aaa;
+    margin-right: 20px;
+    margin-top: -58px;
+}
+.error
+{
+border:3px solid red;
+}
+
+.widget{
+padding: 10px;
+    background:url(http://maxme-life.ru/tests/noise1.png), #ffe106;
+
+    width: 874px;
+    height: 526px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 1px 12px rgba(0,0,0,.6);
+    margin-left: 78px;
+    margin-top: 36px;
+}
+
+ .imag
+{
+      height: 443px;
+    border: none;
+    margin: 25px 70px 25px 25px;
+}
+
+.img{
+  z-index:1;
+  position:relative;
+  float: left;
+  display:inline;
+  border-radius:3px;
+      
+}
+.img:after{
+  content:"";
+  width:100%;
+  height:1px;
+  background:rgba(255,255,255,.8);
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin-bottom:4px;
+}
+.img img{
+  border-radius:3px;
+  box-shadow:inset 0 0 10px rgba(0,0,0,.9);
+}
+.name{
+      padding: 10px;
+    overflow: hidden;
+    text-shadow: 0 1px 0px rgba(255,255,255,.8);
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 8px;
+    float: right;
+    margin-left: 515px;
+}
+
+.article{
+     text-shadow: 0 1px 0px rgba(255,255,255,.8);
+    font-family: 'Alegreya', serif;
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 71px;
+
+}
+
+.player{
+
+        position: absolute;
+    width: 28%;
+    margin-left: 529px;
+    margin-top: 108px;
+
+}
+
+
+.time{
+  vertical-align:top;
+  display:inline-block;
+  padding:5px 50px;
+  text-shadow:0 1px 0px rgba(255,255,255,.8);
+}
+
+.pia
+{
+    opacity: 0.9;
+    height: 367px;
+    margin-left: 158px;
+    margin-top: 136px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.current
+{
+    float: left;
+    color: white;
+    margin-top: 8px;
+}
+.curr
+{
+        margin-left: -3px;
+    margin-top: 32px;
+}
+.slist
+{
+    height: 34px;
+    position: fixed;
+    width: 327px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #2D2322;
+}
+.current-song
+{
+    padding: 7spx;
+    color: #aaa;
+     font-family: 'Alegreya', serif;
+}
+.duration
+{
+    font-family: 'Alegreya', serif;
+    
+        width: 22%;
+    float: right;
+    margin-right: 150px;
+    margin-top: 0px;
+}
+
+#progressBar { 
+    
+    width: 208px;
+    height: 20px;
+    margin-left: 115px;
+    margin-top: -23px;
+}
+span#progress {
+   background-color:#ff0000; // red
+   height:2px;
+   display:inline-block;
+}
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30pxf;
+    cursor: pointer;
+    margin-top: 18px;
+}
+.llist
+{
+        margin-top: 14px;
+    margin-left: 21px;
+      overflow: auto;
+}
+
+.song-name
+{
+    height: 18px !important;
+}
+
+.song > span {
+    z-index:-1;
+    height: 25px !important;
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+    color: #fff;
+    font-family: 'Alegreya', serif;
+    margin-top: 32px;
+        margin-left: 18px;
+}
+.song > span:first-child {
+    width: 150px;
+}
+.cureent-song
+{
+    display: inline-block;
+}
+.artist1
+{
+        color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 39px;
+    left: 25px;
+    font-family: serif !important;
+}
+.artist2
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 105px;
+    left: 24px;
+    font-family: serif !important;
+}
+.artist3
+{      color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    font-family: serif !important;
+}
+.artist4
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 234px;
+    font-family: serif !important;
+    left: 24px;
+
+}
+.artist5
+{
+         color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 299px;
+    left: 26px;
+    font-family: serif !important;
+}
+.artist6
+{
+        color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 360px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist7
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 425px;
+    left: 24px;
+    font-family: serif !important;
+}
+.artist8
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 491px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist9
+{
+    color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 556px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist10{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 619px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist11
+{
+     color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 686px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist12 {
+        color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 751px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist13
+{
+    color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 815px;
+    left: 21px;
+    font-family: serif !important;
+}
+
+
+.time
+{
+
+    left: 196px;
+    top: 11px;
+    padding: 0px !important; 
+    width: 38px !important;
+}
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+#piano
+{
+        margin-left: -16px;
+}
+ul#piano li {
+  list-style:none;
+  float:left;
+  display:inline;
+  background:#aaa;
+  width:40px;
+  position:relative;
+}
+
+
+ul#piano li div.anchor {
+  display:block;
+  height:220px;
+  background:#fff;
+  background:-webkit-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-moz-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-ms-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-o-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:linear-gradient(-30deg,#f5f5f5,#fff);
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 0px #fff,inset 0 -1px 0px #fff,inset 1px 0px 0px #fff,inset -1px 0px 0px #fff,0 4px 3px rgba(0,0,0,0.7);
+  -webkit-border-radius:0 0 3px 3px;
+  border-radius:0 0 3px 3px;
+}
+
+
+
+ul#piano li div.anchor:active:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent transparent transparent rgba(0,0,0,0.1);
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+ul#piano li div.anchor:active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent rgba(0,0,0,0.1) transparent transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+/* Black Tuts */
+ul#piano li span {
+  position:absolute;
+  top:0px;
+  left:-12px;
+  width:20px;
+  height:120px;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+   -webkit-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+}
+div#p-wrapper
+{
+    width: 880px;
+    height: 262px;
+    padding-right: 4px;
+    border: 2px solid black;
+    border-radius: 14px;
+    padding-left: 0;
+    padding-top: 107px;
+    background: url("images/Virtual_Piano%20(1).jpg");
+    background-size: 100% 101%;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 257px;
+    box-shadow: 21px 17px 31px;
+
+}
+
+ul#piano li span:active {
+  border-bottom-width:2px;
+  height:123px;
+  -webkit-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  -moz-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+}
+footer
+{
+        position: absolute;
+    color: wheat;
+    bottom: 0;
+    font-size: 28px;
+    text-align: center;
+    left: 40%;
+}
+table.dataTable tbody tr {
+    background-color: initial;
+}
+#songs_info {
+    display: none;
+}
+
+#songs_filter {
+    color: transparent;
+}
+#songs_filter input {
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.no-footer
+{
+    color: white;
+        height: 502px;
+        margin-top: -127px;
+    margin-left: 854px;
+}
+.volume
+{
+        color: black !important;
+    margin-left: 124px;
+    position: absolute;
+    margin-top: -76px;
+    -webkit-appearance: slider-vertical;
+    height: 96px;
+}
+ul#piano li {
+  list-style:none;
+  float:left;
+  display:inline;
+  background:#aaa;
+  width:40px;
+  position:relative;
+}
+
+
+ul#piano li div.anchor {
+  display:block;
+  height:220px;
+  background:#fff;
+  background:-webkit-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-moz-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-ms-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-o-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:linear-gradient(-30deg,#f5f5f5,#fff);
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 0px #fff,inset 0 -1px 0px #fff,inset 1px 0px 0px #fff,inset -1px 0px 0px #fff,0 4px 3px rgba(0,0,0,0.7);
+  -webkit-border-radius:0 0 3px 3px;
+  border-radius:0 0 3px 3px;
+  
+}
+
+
+
+ul#piano li div.anchor:active:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent transparent transparent rgba(0,0,0,0.1);
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+ul#piano li div.anchor:active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent rgba(0,0,0,0.1) transparent transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+/* Black Tuts */
+ul#piano li span {
+  color:white;
+  position:absolute;
+  top:0px;
+  left:-12px;
+  width:20px;
+  height:120px;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+   -webkit-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+}
+
+ul#piano li {
+  list-style:none;
+  float:left;
+  display:inline;
+  background:#aaa;
+  width:40px;
+  position:relative;
+}
+
+
+ul#piano li div.anchor {
+  display:block;
+  height:220px;
+  background:#fff;
+  background:-webkit-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-moz-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-ms-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-o-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:linear-gradient(-30deg,#f5f5f5,#fff);
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 0px #fff,inset 0 -1px 0px #fff,inset 1px 0px 0px #fff,inset -1px 0px 0px #fff,0 4px 3px rgba(0,0,0,0.7);
+  -webkit-border-radius:0 0 3px 3px;
+  border-radius:0 0 3px 3px;
+  
+}
+
+
+
+ul#piano li div.anchor:active:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent transparent transparent rgba(0,0,0,0.1);
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+ul#piano li div.anchor:active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent rgba(0,0,0,0.1) transparent transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+/* Black Tuts */
+ul#piano li span {
+  color:white;
+  position:absolute;
+  top:0px;
+  left:-12px;
+  width:20px;
+  height:120px;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+   -webkit-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+}
+
+
+ul#piano li span:active {
+  border-bottom-width:2px;
+  height:123px;
+  -webkit-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  -moz-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+}
+
+#cont
+{
+    margin-left: 255px;
+    position: absolute;
+    margin-top: -45px;
+    color: white;
+    font-family: 'Alegreya', serif;
+
+}
+
+input[type="radio"] {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+                      -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.8),
+                0 0 0 1px hsla(0,0%,0%,.6),
+                0 2px 3px hsla(0,0%,0%,.6),
+                0 4px 3px hsla(0,0%,0%,.4),
+                0 6px 6px hsla(0,0%,0%,.2),
+                0 10px 6px hsla(0,0%,0%,.2);
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+}
+
+input[type="radio"]:after {
+    background-color: #444;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: 7px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+input[type="radio"]:checked:after {
+    background-color: #f66;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                inset 0 2px 2px hsla(0,0%,100%,.4),
+                0 1px 1px hsla(0,0%,100%,.8),
+                0 0 2px 2px hsla(0,70%,70%,.4);
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <!----------------head starts------------->
+<head>
+    <title>Musical App</title>
+      <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+    <!------------------head ends------------>
+    <!----------------body start------------------->
+<body>
+    <!--------------welcome page----------------->
+
+<section class="background">
+   <h1>Musical World</h1>
+    <h3>Music is a world within itself. With a Language we all Understand</h3>
+    <!-------------------modal open------------>
+  <a href="#open-modal" class="button">Welcome</a>
+  <div id="open-modal" class="modal__background">	
+      
+    <div class="modal__content">
+        <div class="form">
+        <div class="login-form">
+            <!--------------------modal input------------->
+     <h2 class="logg">Login</h2>
+     <div class="form-group ">
+        
+       <input type="text" class="form-control userid" placeholder="Username " id="UserName" class="userid">
+       
+     </div>
+     <div class="form-group log-status">
+       <input type="password" class="form-control pswrd" placeholder="Password" id="Passwod" >
+       
+     </div>
+   <a class="signup" href="#">Create New Account</a>
+      <a class="link" href="#">Lost Your Password?</a>
+     <button type="button" class="log-btn" >Log in</button>
+     
+    
+   </div>
+      </div>
+        <a href="#close" title="Close" class="close">
+
+      <svg x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g id="Layer_3">
+	<path d="M34.421,24.02l13.318-13.268c0.188-0.187,0.294-0.44,0.294-0.706c0-0.266-0.104-0.52-0.292-0.708
+		l-8.983-9.018c-0.187-0.187-0.441-0.293-0.707-0.294c0,0-0.001,0-0.001,0c-0.265,0-0.519,0.104-0.706,0.292L24.027,13.587
+		L10.759,0.267c-0.187-0.187-0.441-0.293-0.707-0.294c0,0-0.001,0-0.001,0c-0.265,0-0.519,0.104-0.706,0.292L0.328,9.248
+		c-0.392,0.39-0.393,1.023-0.003,1.414L13.593,23.98L0.274,37.248c-0.391,0.39-0.392,1.023-0.003,1.414l8.983,9.018
+		c0.187,0.188,0.441,0.293,0.707,0.294h0.002c0.265,0,0.518-0.104,0.705-0.292l13.318-13.267l13.268,13.318
+		c0.195,0.196,0.452,0.294,0.708,0.294c0.255,0,0.511-0.097,0.706-0.292l9.017-8.982c0.392-0.39,0.393-1.022,0.003-1.414
+		L34.421,24.02z"/>
+</g>
+</svg>
+      </a>
+      </div>
+  </div>
+    </section>
+        <!-----------------------modal closed------------>
+
+    <div class="main hidden">
+        <section>
+            <nav class="circle">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Music Sheets</a></li>
+                    <li><a href="#">Radio</a></li>
+                    <li class="vir"><a href="#">Virtual Piano</a></li>
+                </ul>
+             </nav>
+            <div class="right floated user-name">
+            </div>
+          </section>
+        <section class="music">
+            <div class="widget">
+                
+      <div class="img">
+      <img class="imag current-song-image"></div>
+      <div class="name current-song-name"></div>
+      <div class="article current-song-album"></div>
+  
+  <div class="player">
+<!--
+    <div id="prev" class="player_btn"></div>
+    <div  class=" fa fa-play clickable play-icon" aria-hidden="true"></div>
+    <div id="next" class="player_btn"></div>
+-->  
+    <div class="player-buttons">
+      <i class="fa fa-random clickable disabled" aria-hidden="true"></i>
+      <i class="fa fa-step-backward clickable fwd" aria-hidden="true"></i>
+      <i class="fa fa-play clickable play-icon " aria-hidden="true"></i>
+      <i class="fa fa-step-forward clickable rew" aria-hidden="true"></i>
+      <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+   
+
+        
+        
+           <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" class="volume">
+         
+    </div>
+  
+    
+
+      <div id="progressBar"><span id="progress" style="height:2px;"></span></div>
+      <div class="duration">  <span class="time-elapsed"></span>/ <span class="song-duration"></span></div>
+  </div>
+
+           </div>
+<div class="songs">
+            
+            <div class="slist">
+                <div align="current-song"><span class="current ">&nbsp;Now Playing:&nbsp;</span><span class="curr"><FONT 
+                color="#ffffff" size="+1"><MARQUEE 
+                direction="left" loop="200" width="70%" style=" margin-top:7px;"><STRONG class="current-song-name"></STRONG></MARQUEE></FONT></span>
+                </div>
+             </div>
+   
+        <div class="llist">
+    <table>
+            <audio src="songs/song1.mp3"></audio>
+            <audio src="songs/song2.mp3"></audio>
+            <audio src="songs/song3.mp3"></audio>
+            <audio src="songs/song4.mp3"></audio>
+            <audio src="songs/song5.mp3"></audio>
+
+                <tbody>
+<tr>
+           <td class="song" id="song1">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist1"></span>
+                <span class="time time1"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song2">
+
+                <span  class="song-name" ></span>
+                <span  class="song-artist artist2"></span>
+                 <span class="time time2"></span>
+            </td>
+</tr>
+<tr>                   
+            <td class="song" id="song3">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist3"></span>
+                 <span class="time time3"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song4">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist4"></span>
+                 <span class="time time4"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song5">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist5"></span>
+                 <span class="time time5"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song6">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist6"></span>
+                 <span class="time time6"></span>
+            </td>
+</tr>
+<tr>
+             <td class="song" id="song7">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist7"></span>
+                  <span class="time time7"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song8">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist8"></span>
+                 <span class="time time8"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song9">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist9"></span>
+                 <span class="time time9"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song10">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist10"></span>
+                 <span class="time time10"></span>
+            </td>
+</tr>
+<tr>
+            <td class="song" id="song11">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist11"></span>
+                 <span class="time time11"></span>
+            </td>
+</tr>                    
+<tr>
+            <td class="song" id="song12">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist12"></span>
+                 <span class="time time12"></span>
+            </td>
+</tr>                    
+<tr>
+            <td class="song" id="song13">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist13"></span>
+                 <span class="time time13"></span>
+            </td>
+</tr>                   
+<tr>
+            <td class="song" id="song14">
+                <span  class="song-name"></span>
+                <span  class="song-artist artist14"></span>
+                 <span class="time time14"></span>
+            </td>
+</tr>                    
+    </tbody>
+    </table>
+    </div>
+</div>
+</section>
+        <section class="piano hidden">
+            
+    <div id="p-wrapper">
+<div id="cont">
+           <span><input type="radio" name="foo" checked>PIANO</span>
+           <span><input type="radio" name="foo" class="play-ic">ORGAN</span>
+           <span ><input type="radio" name="foo" class="play-ico">EDM</span>
+           <span ><input type="radio" name="foo" class="play-i">ACOUSTIC</span>
+</div>
+	<ul id="piano">
+<li><div class="anchor" id="key-1"></div></li>
+<li><div class="anchor" id="key-2"></div><span id="key_1"></span></li>
+        <li><div class="anchor" id="key-3"></div><span id="key_2"></span></li>
+            <li><div class="anchor" id="key-4"></div></li>
+	
+     
+        <li><div class="anchor" id="key-5"></div><span id="key_3"></span></li>
+        <li><div class="anchor" id="key-6"></div><span id="key_4"></span></li>
+		
+	    <li><div class="anchor" id="key-7"></div><span id="key_5"></span></li>
+		<li><div class="anchor" id="key-8"></div></li>
+		<li><div class="anchor" id="key-9"></div><span id="key_6"></span></li>
+		<li><div class="anchor" id="key-10"></div><span id="key_7"></span></li>
+
+		<li><div class="anchor" id="key-11"></div></li>
+		<li><div class="anchor" id="key-12"></div><span id="key_8"></span></li>
+      <li><div class="anchor" id="key-13"></div><span id="key_9"></span></li>
+		<li><div class="anchor" id="key-14"></div><span id="key_10"></span></li>
+		<li><div class="anchor" id="key-15"></div></li>
+		<li><div class="anchor" id="key-16"></div><span id="key_11"></span></li>
+		
+		<li><div class="anchor" id="key-17"></div><span id="key_12"></span></li>
+		<li><div class="anchor" id="key-18"></div></li>
+    <li><div class="anchor" id="key-19"></div><span id="key_13"></span></li>
+		<li><div class="anchor" id="key-20"></div><span id="key_14"></span></li>
+		<li><div class="anchor" id="key-21"></div><span id="key_15"></span></li>
+     
+	</ul>
+
+</div>
+        </section>
+        <footer>Made with &hearts; by Dorthi Shree</footer>
+</div>
+    
+    
+    <!--------------------body end--------------->
+<script src="jquery.js"></script>
+    <script src="piano.js"></script>
+     <script src="main.js"></script>
+    
+    </body>
+</html>
